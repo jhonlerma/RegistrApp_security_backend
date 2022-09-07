@@ -12,7 +12,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class RolResponseDto {
+public class RoleResponseDto {
     
     private String name;
     private String descirption;
