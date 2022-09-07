@@ -4,12 +4,14 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.group2.RegistrApp_security_backend.db.entities.Permission;
 import com.group2.RegistrApp_security_backend.db.repositories.PermissionRepository;
 import com.group2.RegistrApp_security_backend.dtos.response.PermissionResponseDto;
 import com.group2.RegistrApp_security_backend.services.PermissionServiceInterface;
 
+@Service
 public class PermissionServiceImplementation implements PermissionServiceInterface {
 
     @Autowired

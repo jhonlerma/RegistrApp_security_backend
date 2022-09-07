@@ -1,0 +1,15 @@
+{
+    "_id": {
+        "$oid": "6313ea582b90fd2d29bab72d"
+    },
+    "document": "doc candidato 1",
+    "last_name": "last n candidato 1",
+    "name": "n candidato 1",
+    "resolution": "res candidato 1",
+    "political_party": {
+        "$ref": "politicalparty",
+        "$id": {
+            "$oid": "631035f8134e2a4ef2e91a72"
+        }
+    }
+}

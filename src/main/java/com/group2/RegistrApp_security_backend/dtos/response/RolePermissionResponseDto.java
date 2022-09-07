@@ -1,5 +1,7 @@
 package com.group2.RegistrApp_security_backend.dtos.response;
 
+import com.group2.RegistrApp_security_backend.db.entities.Permission;
+import com.group2.RegistrApp_security_backend.db.entities.Role;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -12,8 +14,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class PermissionResponseDto {
-    
-    private String url;
-    private String method;
+public class RolePermissionResponseDto {
+    Role role;
+    Permission permission;// ver si permission o role
 }
