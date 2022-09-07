@@ -8,20 +8,20 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.group2.RegistrApp_security_backend.dtos.response.RoleResponseDto;
-import com.group2.RegistrApp_security_backend.services.RoleServiceInterface;
+import com.group2.RegistrApp_security_backend.dtos.response.PermissionResponseDto;
+import com.group2.RegistrApp_security_backend.services.PermissionServiceInterface;
 
 @RestController
-@RequestMapping("api/roles")
-public class RoleController {
+@RequestMapping("api/permissions")
+public class PermissionController {
 
     @Autowired
-    private RoleServiceInterface service;
+    private PermissionServiceInterface service;
 
     @GetMapping("")
-    public ResponseEntity<List<RoleResponseDto>> getAllRoles(){
+    public ResponseEntity<List<PermissionResponseDto>> getAllPermissions(){
 
-        return ResponseEntity.ok(service.getAllRoles());
+        return ResponseEntity.ok(service.getAllPermissions());
     }
     
 }

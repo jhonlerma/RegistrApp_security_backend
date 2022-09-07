@@ -21,10 +21,11 @@ public class RoleServiceImplementation implements RoleServiceInterface {
     public List<RoleResponseDto> getAllRoles() {
 
         List<Role> roles = this.repository.findAll();
-        return roles.stream().map(x -> {
-            return RoleResponseDto.builder()
-            .name(x.getName())
-            .descirption(x.getName())
+        return roles.stream().map(roleMap -> {
+            return RoleResponseDto
+            .builder()
+            .name(roleMap.getName())
+            .descirption(roleMap.getDescription())
             .build();
         }).collect(Collectors.toList());
     }

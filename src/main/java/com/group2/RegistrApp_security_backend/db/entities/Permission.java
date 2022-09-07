@@ -15,11 +15,11 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class Role {
+public class Permission {
 
     @Id
     private String _id;
-    private String name;
-    private String description;
+    private String url;
+    private String method;
     
 }
