@@ -23,7 +23,7 @@ public class RoleController {
         return ResponseEntity.ok(Service.getAllRoles());
     }
 
-    @GetMapping("/{role:Admin|Jurado|Ciudadano|xx}")
+    @GetMapping("/{role:administrator|jury|cityzen|xx}")
     public ResponseEntity<List<PermissionResponseDto>> getAllPermissionsByRoleId(@PathVariable("role") String role){
         return  ResponseEntity.ok(Service.getAllPermission(role));
     }
