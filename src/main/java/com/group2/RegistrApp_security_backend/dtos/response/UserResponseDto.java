@@ -7,7 +7,9 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class PermissionResponseDto {
-    private String url;
-    private String method;
+public class UserResponseDto {
+    private String id;
+    private String seudonimo;
+    private String email;
+    private RoleResponseDto role;
 }
