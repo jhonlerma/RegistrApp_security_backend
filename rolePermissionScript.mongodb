@@ -1,0 +1,214 @@
+// MongoDB Playground
+// To disable this template go to Settings | MongoDB | Use Default Template For Playground.
+// Make sure you are connected to enable completions and to be able to run a playground.
+// Use Ctrl+Space inside a snippet or a string literal to trigger completions.
+
+// Select the database to use.
+use('RegistrAppDataBase');
+
+// The drop() command destroys all data from a collection.
+// Make sure you run it against the correct database and collection.
+// db.sales.drop();
+
+// Insert a few documents into the sales collection.
+db.rolePermission.insertMany([
+  { 
+    role : new DBRef('role', new ObjectId('631879e40af81d87fe732768')),
+    permission: new DBRef('permission', new ObjectId('63188ed20af81d87fe73276c'))
+   },
+  { 
+    role : new DBRef('role', new ObjectId('631879e40af81d87fe732768')),
+    permission: new DBRef('permission', new ObjectId('63188f050af81d87fe73276d'))
+   },
+  { 
+    role : new DBRef('role', new ObjectId('631879e40af81d87fe732768')),
+    permission: new DBRef('permission', new ObjectId('63188f0a0af81d87fe73276e'))
+   },
+  { 
+    role : new DBRef('role', new ObjectId('631879e40af81d87fe732768')),
+    permission: new DBRef('permission', new ObjectId('63188fc30af81d87fe73276f'))
+   },
+  { 
+    role : new DBRef('role', new ObjectId('631879e40af81d87fe732768')),
+    permission: new DBRef('permission', new ObjectId('63188fe90af81d87fe732770'))
+   },
+  { 
+    role : new DBRef('role', new ObjectId('631879e40af81d87fe732768')),
+    permission: new DBRef('permission', new ObjectId('631890400af81d87fe732771'))
+   },
+  { 
+    role : new DBRef('role', new ObjectId('631879e40af81d87fe732768')),
+    permission: new DBRef('permission', new ObjectId('631890530af81d87fe732772'))
+   },
+  { 
+    role : new DBRef('role', new ObjectId('631879e40af81d87fe732768')),
+    permission: new DBRef('permission', new ObjectId('631890680af81d87fe732773'))
+   },
+  { 
+    role : new DBRef('role', new ObjectId('631879e40af81d87fe732768')),
+    permission: new DBRef('permission', new ObjectId('6318909c0af81d87fe732774'))
+   },
+  { 
+    role : new DBRef('role', new ObjectId('631879e40af81d87fe732768')),
+    permission: new DBRef('permission', new ObjectId('631890bd0af81d87fe732775'))
+   },
+  { 
+    role : new DBRef('role', new ObjectId('631879e40af81d87fe732768')),
+    permission: new DBRef('permission', new ObjectId('631890d20af81d87fe732777'))
+   },
+  { 
+    role : new DBRef('role', new ObjectId('631879e40af81d87fe732768')),
+    permission: new DBRef('permission', new ObjectId('631890ea0af81d87fe732778'))
+   },
+  { 
+    role : new DBRef('role', new ObjectId('631879e40af81d87fe732768')),
+    permission: new DBRef('permission', new ObjectId('631891100af81d87fe732779'))
+   },
+  { 
+    role : new DBRef('role', new ObjectId('631879e40af81d87fe732768')),
+    permission: new DBRef('permission', new ObjectId('6318912e0af81d87fe73277a'))
+   },
+  { 
+    role : new DBRef('role', new ObjectId('631879e40af81d87fe732768')),
+    permission: new DBRef('permission', new ObjectId('631891430af81d87fe73277b'))
+   },
+  { 
+    role : new DBRef('role', new ObjectId('631879e40af81d87fe732768')),
+    permission: new DBRef('permission', new ObjectId('631891560af81d87fe73277c'))
+   },
+  { 
+    role : new DBRef('role', new ObjectId('631879e40af81d87fe732768')),
+    permission: new DBRef('permission', new ObjectId('631891650af81d87fe73277d'))
+   },
+  { 
+    role : new DBRef('role', new ObjectId('631879e40af81d87fe732768')),
+    permission: new DBRef('permission', new ObjectId('631cba6d075686a0038be5dc'))
+   },
+  { 
+    role : new DBRef('role', new ObjectId('631879e40af81d87fe732768')),
+    permission: new DBRef('permission', new ObjectId('631cba8a075686a0038be5dd'))
+   },
+  { 
+    role : new DBRef('role', new ObjectId('631879e40af81d87fe732768')),
+    permission: new DBRef('permission', new ObjectId('631cbaa2075686a0038be5de'))
+   },
+  { 
+    role : new DBRef('role', new ObjectId('631879e40af81d87fe732768')),
+    permission: new DBRef('permission', new ObjectId('631cbc09075686a0038be5df'))
+   },
+  { 
+    role : new DBRef('role', new ObjectId('631879e40af81d87fe732768')),
+    permission: new DBRef('permission', new ObjectId('631cbc43075686a0038be5e0'))
+   },
+  { 
+    role : new DBRef('role', new ObjectId('631879e40af81d87fe732768')),
+    permission: new DBRef('permission', new ObjectId('631cbc62075686a0038be5e1'))
+   },
+  { 
+    role : new DBRef('role', new ObjectId('631879e40af81d87fe732768')),
+    permission: new DBRef('permission', new ObjectId('631cbc82075686a0038be5e2'))
+   },
+  { 
+    role : new DBRef('role', new ObjectId('631879e40af81d87fe732768')),
+    permission: new DBRef('permission', new ObjectId('631cbca4075686a0038be5e3'))
+   },
+  { 
+    role : new DBRef('role', new ObjectId('631879e40af81d87fe732768')),
+    permission: new DBRef('permission', new ObjectId('631cbcc1075686a0038be5e4'))
+   },
+  { 
+    role : new DBRef('role', new ObjectId('631879e40af81d87fe732768')),
+    permission: new DBRef('permission', new ObjectId('631cbcce075686a0038be5e5'))
+   },
+  { 
+    role : new DBRef('role', new ObjectId('631879e40af81d87fe732768')),
+    permission: new DBRef('permission', new ObjectId('631cbcdb075686a0038be5e6'))
+   },
+  { 
+    role : new DBRef('role', new ObjectId('631879e40af81d87fe732768')),
+    permission: new DBRef('permission', new ObjectId('631cbced075686a0038be5e7'))
+   },
+  { 
+    role : new DBRef('role', new ObjectId('631879e40af81d87fe732768')),
+    permission: new DBRef('permission', new ObjectId('631cbd21075686a0038be5e8'))
+   },
+  { 
+    role : new DBRef('role', new ObjectId('631879e40af81d87fe732768')),
+    permission: new DBRef('permission', new ObjectId('631cbd2c075686a0038be5e9'))
+   },
+  { 
+    role : new DBRef('role', new ObjectId('631879e40af81d87fe732768')),
+    permission: new DBRef('permission', new ObjectId('631cbd3e075686a0038be5ea'))
+   },
+  { 
+    role : new DBRef('role', new ObjectId('631879e40af81d87fe732768')),
+    permission: new DBRef('permission', new ObjectId('631cbdc6075686a0038be5eb'))
+   },
+  { 
+    role : new DBRef('role', new ObjectId('631879e40af81d87fe732768')),
+    permission: new DBRef('permission', new ObjectId('631cbdf1075686a0038be5ed'))
+   },
+  { 
+    role : new DBRef('role', new ObjectId('631879e40af81d87fe732768')),
+    permission: new DBRef('permission', new ObjectId('631cbe03075686a0038be5ee'))
+   },
+  { 
+    role : new DBRef('role', new ObjectId('631879e40af81d87fe732768')),
+    permission: new DBRef('permission', new ObjectId('631cbe15075686a0038be5ef'))
+   },
+   // ------------Jury Permissions--------------------
+  { 
+    role : new DBRef('role', new ObjectId('63187cb40af81d87fe732769')),
+    permission: new DBRef('permission', new ObjectId('631891100af81d87fe732779'))
+   },
+  { 
+    role : new DBRef('role', new ObjectId('63187cb40af81d87fe732769')),
+    permission: new DBRef('permission', new ObjectId('6318912e0af81d87fe73277a'))
+   },
+  { 
+    role : new DBRef('role', new ObjectId('63187cb40af81d87fe732769')),
+    permission: new DBRef('permission', new ObjectId('631891430af81d87fe73277b'))
+   },
+  { 
+    role : new DBRef('role', new ObjectId('63187cb40af81d87fe732769')),
+    permission: new DBRef('permission', new ObjectId('631891560af81d87fe73277c'))
+   },
+  { 
+    role : new DBRef('role', new ObjectId('63187cb40af81d87fe732769')),
+    permission: new DBRef('permission', new ObjectId('631891650af81d87fe73277d'))
+   },
+  { 
+    role : new DBRef('role', new ObjectId('63187cb40af81d87fe732769')),
+    permission: new DBRef('permission', new ObjectId('631cba6d075686a0038be5dc'))
+   },
+  { 
+    role : new DBRef('role', new ObjectId('63187cb40af81d87fe732769')),
+    permission: new DBRef('permission', new ObjectId('631cba8a075686a0038be5dd'))
+   },
+  { 
+    role : new DBRef('role', new ObjectId('63187cb40af81d87fe732769')),
+    permission: new DBRef('permission', new ObjectId('631cbaa2075686a0038be5de'))
+   },
+
+   //-------------------Cityzen Permisions-----------------
+   { 
+    role : new DBRef('role', new ObjectId('63187cb40af81d87fe732769')),
+    permission: new DBRef('permission', new ObjectId('631891650af81d87fe73277d'))
+   },
+
+]);
+
+// new DBRef('persons', new ObjectId('5165419064fada69cef33ea2'))})
+// Run a find command to view items sold on April 4th, 2014.
+// db.sales.find({ date: { $gte: new Date('2014-04-04'), $lt: new Date('2014-04-05') } });
+
+// Build an aggregation to view total sales for each product in 2014.
+// const aggregation = [
+//   { $match: { date: { $gte: new Date('2014-01-01'), $lt: new Date('2015-01-01') } } },
+//   { $group: { _id: '$item', totalSaleAmount: { $sum: { $multiply: [ '$price', '$quantity' ] } } } }
+// ];
+
+// Run the aggregation and open a cursor to the results.
+// Use toArray() to exhaust the cursor to return the whole result set.
+// You can use hasNext()/next() to iterate through the cursor page by page.
+// db.sales.aggregate(aggregation);
