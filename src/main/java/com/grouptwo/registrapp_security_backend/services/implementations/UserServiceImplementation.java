@@ -40,7 +40,7 @@ public class UserServiceImplementation implements UserService {
                 .email(user.getEmail())
                 .username(user.getUsername())
                 .password(encoder.encode(user.getPassword()))
-                .role(roleRepository.findOneByName("administrator").get()) //QUEDAS MARCADO GONORREA 
+                .role(roleRepository.findById(user.getRole()).get()) //QUEDAS MARCADO GONORREA 
                 .build();
         userToCreate = userRepository.save(userToCreate);
         return CreateUserResponseDto.builder()
@@ -93,10 +93,6 @@ public class UserServiceImplementation implements UserService {
 
     @Override
     public List<UserResponseDto> getUsers(String role) {
-
-        System.out.println("\n------------------------role---------------------------");
-        System.out.println(role);
-        System.out.println("-------------------------------------------------------");
 
         Role r = roleRepository.findById(role).map(x -> x)
         .orElseThrow(() -> new RgAppException( 404, "Rol inexistente", new Date()));

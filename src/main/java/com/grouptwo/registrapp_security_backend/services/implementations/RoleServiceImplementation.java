@@ -41,9 +41,8 @@ public class RoleServiceImplementation implements RoleService {
 
         Role r = roleRepository.findOneByName(role).map(x -> x).orElseThrow(() -> new RgAppException(400, "rol Invalido", new Date()));
         String id = r.getId();
-        List<RolePermission> rolePermissions = rolePermissionRepository.findAllByRoleId(id);
+        List<RolePermission> rolePermissions = rolePermissionRepository.findAllByRole(id);
         List<PermissionResponseDto> permissions = new ArrayList<>();
-
         if (!rolePermissions.isEmpty()) {
             List<String> ids = rolePermissions.stream().map(x -> x.getId()).collect(Collectors.toList());
             List<RolePermission> p = rolePermissionRepository.findAllByIds(ids); // revisar si se usan metodos del
