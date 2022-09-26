@@ -31,6 +31,7 @@ public class RoleServiceImplementation implements RoleService {
 
         List<Role> roles = this.roleRepository.findAll();
         return roles.stream().map(x -> RoleResponseDto.builder()
+                .id(x.getId())
                 .name(x.getName())
                 .description(x.getDescription())
                 .build()).collect(Collectors.toList());
