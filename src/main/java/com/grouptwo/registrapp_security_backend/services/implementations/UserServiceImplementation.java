@@ -82,6 +82,7 @@ public class UserServiceImplementation implements UserService {
 
         return UserResponseDto.builder()
                 .role(RoleResponseDto.builder()
+                        .id(role.getId())
                         .name(role.getName())
                         .description(role.getDescription())
                         .build())
@@ -98,12 +99,12 @@ public class UserServiceImplementation implements UserService {
         .orElseThrow(() -> new RgAppException( 404, "Rol inexistente", new Date()));
 
         List<User> users = userRepository.findAllByRoleId(r.getId());
-
         List<UserResponseDto> usersToReturn = new ArrayList<>();
         for (User user : users) {
             usersToReturn.add(
                     UserResponseDto.builder()
                             .role(RoleResponseDto.builder()
+                                    .id(r.getId())
                                     .name(r.getName())
                                     .description(r.getDescription())
                                     .build())
@@ -131,6 +132,7 @@ public class UserServiceImplementation implements UserService {
                             .id(user.getId())
                             .email(user.getEmail())
                             .role(RoleResponseDto.builder()
+                                    .id(role.getId())
                                     .name(role.getName())
                                     .description(role.getDescription())
                                     .build())
